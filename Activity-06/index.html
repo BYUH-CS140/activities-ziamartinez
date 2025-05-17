@@ -18,9 +18,10 @@
             padding: 10px;
         }
 
-        header h1 {
+        #mainHeader {
             color: #5C4033;
             margin: 0;
+            text-align: center;
         }
 
         img {
@@ -50,16 +51,13 @@
         }
 
         .center {
-             text-align: center;
-             margin: 0 auto;
-             width: 80%;
+            text-align: center;
         }
-
     </style>
 </head>
-<body style="background-color: #f5ebd8; margin: 0;">
-    <header style="background-color: #d7b99d; padding: 10px; text-align: center;">
-        <h1 style="color: #5C4033; text-align: center;">My Travel Blog</h1>
+<body>
+    <header>
+        <h1 id="mainHeader">My Travel Blog</h1>
     </header>
 
     <main>
@@ -74,8 +72,8 @@
         <h2>Tokyo, Japan</h2>
         <div class="center">
             <p>Tokyo is a vibrant city that blends the ultramodern with the traditional. From neon-lit skyscrapers to historic temples, Tokyo offers a unique travel experience.</p>
-        <img src="img/shibuya.png" alt="Picture of me at Shibuya Crossing" height="300">
-        <img src="img/temple.png" alt="Picture of me at Tokyo Japan Temple" height="300">
+            <img src="img/shibuya.png" alt="Picture of me at Shibuya Crossing" height="300">
+            <img src="img/temple.png" alt="Picture of me at Tokyo Japan Temple" height="300">
         </div>
 
         <section>
@@ -88,7 +86,7 @@
                 <li><b>Japan Tokyo Temple</b></li>
                 <li><b>Tokyo Tower</b></li>
             </ol>
-            <p class="center">Tsukiji Outer Market is and will continue to be the <mark>best marketplace</mark> for customers to buy fresh seafood, vegetables, and Japanese traditional food materials. <sup>1</sup></p>
+            <p>Tsukiji Outer Market is and will continue to be the <mark>best marketplace</mark> for customers to buy fresh seafood, vegetables, and Japanese traditional food materials. <sup>1</sup></p>
             <p>The Imperial Palace has served as the residential place of the successive Emperors since 1868. <sup>2</sup></p>
             <p>The Tokyo Skytree (東京スカイツリー) is a television broadcasting tower and landmark of Tokyo. <sup>3</sup></p>
             <p>Senso-ji (浅草寺) is <em>Tokyo's oldest temple</em>, completed in 645 AD. It is located in Asakusa, Tokyo. <sup>3</sup></p>
@@ -109,10 +107,10 @@
 
         <section>
             <h3>Travel Vlog Video</h3>
-            <iframe class="video-frame" src="https://www.youtube.com/embed/w53AXPH_9uc"
-                allowfullscreen title="YouTube Video"></iframe>
-            <p>In this video, we explore the vibrant streets of Tokyo, from the bustling Tsukiji Market to the serene Senso-ji Temple.</p>
-            <a href="https://www.youtube.com/watch?v=w53AXPH_9uc">Watch on YouTube</a>
+            <p>Check out my travel vlog video where I share my experiences in Tokyo!</p>
+            <div class="center">
+                <iframe class="video-frame" src="https://www.youtube.com/embed/w53AXPH_9uc" allowfullscreen title="YouTube Video"></iframe>
+            </div>
         </section>
 
         <section>
