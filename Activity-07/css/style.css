@@ -1,0 +1,38 @@
+/* It adds background color and changes the font. */
+        body {
+            background-color: #f5ebd8;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+         /* It styles the header container. */
+        header {
+            background-color: #d7b99d;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* It styles the main title text with a brown color and centers it inside the header. */
+        #mainHeader {
+            color: #5C4033;
+            margin: 0;
+            text-align: center;
+        }
+        /* It adds border and shadow to all images. */
+        img {
+            margin: 0;
+            border: 1px solid #5C4033;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px grey;
+        }
+        /* It styles the footer container. */
+        footer {
+            background-color: #d7b99d;
+            text-align: center;
+            padding: 1px;
+        }
+        /* It styles the text color. */
+        p {
+            color: black;
+        }
