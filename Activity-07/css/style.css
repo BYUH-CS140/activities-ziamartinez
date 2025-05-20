@@ -63,8 +63,18 @@ p {
     font-weight: bold;
 }
 
+/* Italicizes the text. */
 .italic {
     font-style: italic;
+}
+
+/*Using google fonts*/
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 
 
