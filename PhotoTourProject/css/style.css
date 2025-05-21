@@ -6,15 +6,22 @@ body {
     color: #333;
 }
 
-header, footer {
-    background-color: #005f73;
+header{
+    background-color: #0038A8;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
+footer {
+    background-color: #FCD116;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
 nav {
-    background-color: #0a9396;
+    background-color: #CE1126;
 }
 
 nav ul {
