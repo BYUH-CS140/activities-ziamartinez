@@ -1,0 +1,76 @@
+/* Basic resets */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/background-texture.jpg') repeat;
+    color: #333;
+}
+
+header{
+    background-color: #223030;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #959D90;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #BBA58F;
+    color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.places-list {
+    list-style-image: url('../images/bullet.png');
+    padding-left: 1.2rem;
+}
+
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
