@@ -101,9 +101,9 @@ img {
 
 .image-row {
       display: flex;
-      gap: 20px; /* spacing between images */
-      justify-content: center; /* center the row */
-      align-items: flex-start; /* align tops of figures */
+      gap: 20px; 
+      justify-content: center; 
+      align-items: flex-start; 
     }
 
 .image-row figure {
