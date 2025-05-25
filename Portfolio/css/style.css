@@ -91,10 +91,3 @@ img {
 .image-row figure {
       text-align: center;
     }
-
-#page-header {
-  background-image: url("pattern-bg.jpg");
-  background-size: cover;
-  color: #ffffff;
-  padding: 1rem;
-}
