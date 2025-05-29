@@ -30,23 +30,63 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    padding-top: 1rem;
+    list-style-image: url('../images/bullet1.png');
 }
 
 .nav-list > li {
   padding: 0.25rem 0.75rem;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .nav-list a {
   text-decoration: none;
   color: #333333;
   font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .nav-list a:hover {
   color: #959D90;
   background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Dropdown menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e0e0e0;
 }
 
 .resources {
