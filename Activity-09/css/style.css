@@ -26,15 +26,17 @@ body {
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    padding-top: 1rem;
-    list-style-image: url('../images/bullet1.png');
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+  position: relative;
+  list-style-image: url('../images/bullet1.png');
 }
 
 .nav-list > li {
+  position: relative;
   padding: 0.25rem 0.75rem;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
@@ -44,9 +46,10 @@ body {
 
 .nav-list a {
   text-decoration: none;
-  color: #333333;
+  color: #333;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
+  display: inline-block;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -55,12 +58,6 @@ body {
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-/* Dropdown menu */
-.dropdown:hover .dropdown-menu {
-  display: block;
 }
 
 .dropdown-menu {
@@ -73,21 +70,29 @@ body {
   border-radius: 6px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   padding: 0.5rem 0;
-  z-index: 1;
+  z-index: 100;
+  flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .dropdown-menu li {
-  padding: 0.5rem 1rem;
+  padding: 0;
+  text-align: left;
 }
 
 .dropdown-menu li a {
-  color: #333;
   display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
 }
 
 .dropdown-menu li a:hover {
   background-color: #e0e0e0;
 }
+
 
 .resources {
   background-color: #ffffff;
