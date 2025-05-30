@@ -1,19 +1,19 @@
 body {
-  background color: forestgreen;
+  background-color: forestgreen;
   margin: 0;
-  font-family: Gil Sans;
+  font-family:'Gill Sans';
 }
 
 header {
-  background-color: G0ld;
+  background-color: Gold;
   color: #004d00;
   text-align: center;
   font-size: 2em;
-  paddding: 20px;
+  padding: 20px;
   margin: 0;
 }
 
-.nav {
+nav {
   background-color: #2e1a1a;
   width: 100%;
   margin: 0;
@@ -44,27 +44,27 @@ nav a {
   padding: 14px 16px;
 }
 
-nav a::hover {
+nav a:hover {
   background-color: gold;
   color: #2e1a1a;
 }
 
 main {
   background-color: lightgreen;
-  margin: 50px 100;
+  margin: 50px 100px;
   padding: 50px;
 }
 
-garden {
+#garden {
   border: 5px solid brown;
   border-radius: 30px;
   box-shadow: 5px 5px 15px grey;
-  height: 30;
+  height: 30%;
   width: 30%;
 }
 
 section {
-  margintop: 30px;
+  margin-top: 30px;
 }
 
 h2 {
