@@ -1,0 +1,174 @@
+/* Styling */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#page-header {
+  background-image: url('../images/pattern-bg.jpg');
+  background-size: cover;
+  color: #ffffff;
+  padding: 1rem;
+  text-align:center;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+  position: relative;
+  list-style-image: url('../images/bullet1.png');
+}
+
+.nav-list > li {
+  position: relative;
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #959D90;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+  z-index: 100;
+  flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 0;
+  text-align: left;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e0e0e0;
+}
+
+
+.resources {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.resources li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #959D90;
+    color: black;
+    text-align:center;
+    padding: 1rem;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.places-list {
+    list-style-image: url('../images/bullet.png');
+    padding-left: 1.2rem;
+}
+
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.image-row {
+      display: flex;
+      gap: 20px; 
+      justify-content: center; 
+      align-items: flex-start; 
+    }
+
+.image-row figure {
+      text-align: center;
+    }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
