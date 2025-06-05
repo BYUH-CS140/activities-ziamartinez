@@ -1,17 +1,17 @@
-/* Styling */
+/* Overall Styling */
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
+/* Body Styling */
 body {
     margin:0;
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f2f2f2;
     color: #333;
 }
-
+/* Page header with background image */
 #page-header {
   background-image: url('../images/pattern-bg.jpg');
   background-size: cover;
@@ -19,12 +19,13 @@ body {
   padding: 1rem;
   text-align:center;
 }
-
+/* Title Styling */
 .title {
     font-size: 2rem;
     letter-spacing: 0.05em;
 }
 
+/* Navigation List Styling */
 .nav-list {
   list-style: none;
   display: flex;
@@ -35,15 +36,17 @@ body {
   list-style-image: url('../images/bullet1.png');
 }
 
+/* Nav List Items (Background Boxes) */
 .nav-list > li {
   position: relative;
   padding: 0.25rem 0.75rem;
-  background-color: rgba(250, 250, 250, 0.2);
+  background-color: #f0f0f0;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
+/* Nav Links */
 .nav-list a {
   text-decoration: none;
   color: #333;
@@ -53,6 +56,7 @@ body {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Nav Link Hover Effects */
 .nav-list a:hover {
   color: #959D90;
   background-color: #ffffff;
@@ -60,6 +64,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Dropdown Menu Styling */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -74,26 +79,30 @@ body {
   flex-direction: column;
 }
 
+/* Show Dropdown on Hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Dropdown List Item Styling */
 .dropdown-menu li {
   padding: 0;
   text-align: left;
 }
 
+/* Dropdown Link Styling */
 .dropdown-menu li a {
   display: block;
   padding: 0.5rem 1rem;
   color: #333;
 }
 
+/* Dropdown Link Hover */
 .dropdown-menu li a:hover {
   background-color: #e0e0e0;
 }
 
-
+/* Resource List Styling */
 .resources {
   background-color: #ffffff;
   padding: 1rem;
@@ -106,6 +115,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Footer Styling */
 footer {
     background-color: #959D90;
     color: black;
@@ -113,6 +123,7 @@ footer {
     padding: 1rem;
 }
 
+/* Section Block Styling */
 section {
     max-width: 900px;
     margin: 2rem auto;
@@ -121,11 +132,13 @@ section {
     border-radius: 8px;
 }
 
+/* Custom List Styling */
 .places-list {
     list-style-image: url('../images/bullet.png');
     padding-left: 1.2rem;
 }
 
+/* Figure and Caption Styling */
 figure {
     margin: 1.5rem 0;
     text-align: center;
@@ -137,6 +150,7 @@ figcaption {
     color: #555;
 }
 
+/* Image Styling */
 img {
     max-width: 100%;
     height: auto;
@@ -144,6 +158,7 @@ img {
     box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
 
+/* Image Row Flex Layout */
 .image-row {
       display: flex;
       gap: 20px; 
@@ -155,7 +170,7 @@ img {
       text-align: center;
     }
 
-    /* Flexbox Two-Column Layout */
+ /* Flexbox Two-Column Layout */
 .main-content {
   display: flex;
   flex-direction: row;
@@ -189,6 +204,7 @@ img {
   border-radius: 8px;
 }
 
+/* Clearfix for Floated Image */
 .float-image::after {
   content: "";
   display: table;
