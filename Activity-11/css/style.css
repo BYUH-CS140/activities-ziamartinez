@@ -211,14 +211,5 @@ img {
   clear: both;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-  }
 
-  .column {
-    flex: 1 1 100%;
-  }
-}
 
