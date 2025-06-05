@@ -38,7 +38,7 @@ body {
 .nav-list > li {
   position: relative;
   padding: 0.25rem 0.75rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(250, 250, 250, 0.2);
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -155,20 +155,54 @@ img {
       text-align: center;
     }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    /* Flexbox Two-Column Layout */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
 }
 
-.item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    text-align: center;
+.column {
+  flex: 1 1 45%;
+  background-color: #e3e3e3;
+  padding: 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
+
+/* Floated Image Section */
+.float-image {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.float-image img {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.float-image::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 1 1 100%;
+  }
+}
+
