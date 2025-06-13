@@ -1,0 +1,206 @@
+/* It adds background color and changes the font. */
+body {
+    background-color: #f5ebd8;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* It styles the header container. */
+header {
+    background-color: #d7b99d;
+    text-align: center;
+    padding: 10px;
+    grid-area: header;
+}
+
+/* It styles the main title text with a brown color and centers it inside the header. */
+#mainHeader {
+    color: #5C4033;
+    margin: 0;
+}
+
+/* It adds border and shadow to all images. */
+img {
+    border: 1px solid #5C4033;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px grey;
+    width: 100%;
+}
+
+/* It styles the footer container. */
+footer {
+    background-color: #d7b99d;
+    text-align: center;
+    padding: 1px;
+    grid-area: footer;
+}
+
+
+/* Sets background for navigation bar */
+nav {
+    background-color: #ffffff;
+    padding: 0;
+    grid-area: nav;
+}
+
+
+/* Removes bullets and padding from nav list */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles each navigation item */
+.nav-list>li {
+    margin: 5px;
+    padding: 0;
+    background-color: rgba(134, 73, 73, 0.2);
+    border-radius: 4px;
+    position: relative;
+}
+
+/* Styles links inside nav */
+.nav-list a {
+    margin: 0.25rem 0.75rem;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Changes color on hover */
+.nav-list a:hover {
+    color: #959D90;
+}
+
+
+/* It styles the text color. */
+p {
+    color: black;
+}
+
+/* This style centers the video and gives it a shadow and rounded corners. */
+.video-frame {
+    width: 100%;
+    max-width: 500px;
+    height: 360px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px grey;
+    display: block;
+}
+
+/* It centers the text. */
+.center {
+    text-align: center;
+}
+
+/* It styles the description of the h1. */
+#emphasize {
+    color: black;
+}
+
+/* It styles the h2 and h3. */
+#h3 {
+    color: #5C4033;
+    font-weight: bold;
+}
+
+/* Italicizes the text. */
+.italic {
+    font-style: italic;
+}
+
+/*Using google fonts*/
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+
+/* Adds responsive width and centers images */
+.pic {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* It styles the main section. */
+main {
+    grid-area: main;
+}
+
+/* It styles the section inside the main. */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Tablet style */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 20px;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer"
+        ;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .pic {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Desktop style */
+@media screen and (min-width: 1024px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "nav main main"
+            "footer footer footer";
+    }
+
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    section ol,
+    section ul {
+        columns: 2;
+        column-gap: 2rem;
+    }
+
+    .video-frame {
+        height: 400px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
