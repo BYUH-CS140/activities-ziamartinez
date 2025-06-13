@@ -4,6 +4,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url('../images/background-texture.jpg') repeat;
     color: #333;
+    display: grid;
     grid-template-areas:
         "header"
         "nav"
@@ -18,6 +19,8 @@ header{
     padding: 1rem;
     grid-area: header;
 }
+
+
 
 main {
     grid-area: main;
@@ -34,6 +37,7 @@ footer {
 nav {
     background-color: #CE1126;
     grid-area: nav;
+    padding: 0.5rem;
 }
 
 /* Removes bullets and padding from nav list */
@@ -54,7 +58,7 @@ nav {
 .nav-list a {
     margin: 0.25rem 0.75rem;
     color: red;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
