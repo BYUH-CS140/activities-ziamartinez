@@ -12,6 +12,7 @@ body {
         "footer";
 }
 
+/* Grid layout for the page */
 header{
     background-color: #0038A8;
     color: white;
@@ -21,11 +22,12 @@ header{
 }
 
 
-
+/* Styles the main content area */
 main {
     grid-area: main;
 }
 
+/* Styles the footer */
 footer {
     background-color: #FCD116;
     color: black;
@@ -34,6 +36,7 @@ footer {
     grid-area: footer;
 }
 
+/* Styles the navigation bar */
 nav {
     background-color: #CE1126;
     grid-area: nav;
@@ -68,6 +71,7 @@ nav {
     background-color: rgba(251, 249, 249, 0.135);
 }
 
+/* Styles the main section */
 section {
     max-width: 900px;
     margin: 2rem auto;
@@ -76,22 +80,26 @@ section {
     border-radius: 8px;
 }
 
+/* Styles the section headings */
 .places-list {
     list-style-image: url('../images/bullet.png');
     padding-left: 1.2rem;
 }
 
+/* Styles the ordered list */
 figure {
     margin: 1.5rem 0;
     text-align: center;
 }
 
+/* Styles the figure caption */
 figcaption {
     font-style: italic;
     font-size: 0.9rem;
     color: #555;
 }
 
+/* Styles the images inside the section */
 img {
     max-width: 100%;
     height: 200px;
