@@ -23,6 +23,12 @@ h1, h2 {
     margin: 20px 0;
     background-color: #ff0000;
     border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+
 }
 
 .palette-history {
@@ -36,3 +42,4 @@ h1, h2 {
     margin: 5px;
     border: 1px solid #ccc;
 }
+
