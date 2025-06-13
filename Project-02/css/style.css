@@ -13,7 +13,7 @@ body {
 }
 
 /* Grid layout for the page */
-header{
+header {
     background-color: #0038A8;
     color: white;
     text-align: center;
@@ -105,7 +105,7 @@ img {
     height: 200px;
     width: 300px;
     border-radius: 6px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* It styles the section inside the main. */
