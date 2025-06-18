@@ -15,6 +15,7 @@ input {
     width: 100%;
     padding: 10px;
     font-size: 1em;
+    box-sizing: border-box;
 }
 
 /* Fail validation */
