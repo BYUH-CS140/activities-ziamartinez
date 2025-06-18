@@ -1,10 +1,76 @@
-.feedback {
-  color: red;
-  display: none;
+/* Uses a flexbox*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+/* Bold label*/
+label {
+    font-weight: bold;
+}
+
+/* Full-width input*/
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Fail validation */
+.feedback {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Success message styling */
 .valid-feedback {
-  color: green;
-  display: none; 
+    color: green;
+    font-weight: bold;
+}
+
+/* Tablet view (768px and up) */
+@media screen and (min-width: 768px) {
+    form {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 10px 20px;
+        align-items: center;
+    }
+
+    label {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .feedback {
+        grid-column: 2 / 3;
+    }
+
+    button {
+        grid-column: 2 / 3;
+        width: fit-content;
+    }
+
+    .valid-feedback {
+        grid-column: 2 / 3;
+    }
+}
+
+/* Desktop view (1024px and up) */
+@media screen and (min-width: 1024px) {
+    form {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    input {
+        font-size: 1.1em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
 }
 
