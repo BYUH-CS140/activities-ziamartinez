@@ -1,10 +1,13 @@
-/* Reset & base styles */
+/* Reset & Base Styles */
+/* Applies global reset for margin, padding, and box-sizing to all elements. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styles */
+/* Sets global typography, background image for the entire page, and establishes a flexbox layout for main sections. */
 body {
   font-family: 'Segoe UI', Roboto, sans-serif;
   color: #333;
@@ -21,6 +24,8 @@ body {
   min-height: 100vh;
 }
 
+/* Header Styles (Homepage Hero Header) */
+/* Styles for the main header section, typically found on the homepage, with a dark overlay for text readability. */
 header {
   text-align: center;
   padding: 1rem;
@@ -31,6 +36,8 @@ header {
   border-radius: 8px;
 }
 
+/* Base Button Styles */
+/* Defines common styles for all button elements, including cursor, borders, font, padding, and transitions. */
 button {
   cursor: pointer;
   border: none;
@@ -43,7 +50,8 @@ button {
   font-weight: bold;
 }
 
-
+/* Title Styles */
+/* Styles for large, prominent titles, usually within headers or hero sections. */
 .title {
   font-size: 3rem;
   font-weight: 700;
@@ -51,6 +59,8 @@ button {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Subtitle Styles */
+/* Styles for secondary titles or descriptive text, often accompanying the main title. */
 .subtitle {
   font-size: 1.5rem;
   font-weight: 500;
@@ -58,102 +68,124 @@ button {
   color: #f0f0f0;
 }
 
+/* Call To Action Button Styles */
+/* Specific styling for prominent call-to-action buttons, often larger than standard buttons. */
 .cta-button {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.5rem 4rem;
   background-color: #d7b99d;
   color: black;
-
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
+/* Intro Content Wrapper Styles */
+/* Styles for a content section that often features text and an image side-by-side, using CSS Grid for layout. */
 .intro-content-wrapper {
-  display: grid; /* Make it a grid container */
+  display: grid;
   grid-template-columns: 1fr; /* Default to single column for mobile */
-  gap: 2rem; /* Space between text and image */
-  align-items: center; /* Vertically align items in the middle */
-  margin-bottom: 3rem; /* Space below this section */
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
   background-color: #ffffff;
-  padding: 2rem 1rem; /* Padding inside the section */
-  border-radius: 8px; /* Optional: adds rounded corners */
+  padding: 2rem 1rem;
+  border-radius: 8px;
 }
 
+/* Intro Image Styles */
+/* Styles specifically for images found within the intro content wrapper. */
 .intro-image img {
-  width: 100%; /* Make image responsive within its grid column */
+  width: 100%;
   height: auto;
-  border-radius: 8px; /* Optional: adds rounded corners to the image */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* Guarantee Section Styles */
+/* Styling for the "Our Guarantee" section, including background, padding, and text alignment. */
 .guarantee-section {
   background-color: white;
-  padding: 3rem 1rem; /* Adjust padding as needed */
-  text-align: center; /* Center the main heading and the button wrapper */
-  margin-top: 2rem; /* Space above this section */
-  
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
+/* Guarantee Heading Styles */
+/* Styles for the main heading within the guarantee section. */
 .guarantee-heading {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #333; /* Darker color for emphasis */
-  margin-bottom: 2.5rem; /* Space below the heading */
+  color: #333;
+  margin-bottom: 2.5rem;
 }
 
+/* Guarantee Grid Styles */
+/* Defines the grid layout for individual guarantee items, making them responsive. */
 .guarantee-grid {
   display: grid;
   grid-template-columns: 1fr; /* Default to single column on small screens */
-  gap: 2rem; /* Space between grid items */
-  max-width: 900px; /* Limit grid width to keep content readable */
-  margin: 0 auto 3rem auto; /* Center the grid and add space below */
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
 }
 
+/* Individual Guarantee Item Styles */
+/* Styles for each item within the guarantee grid, including flexbox for content alignment. */
 .guarantee-item {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content within each item */
+  align-items: center;
   text-align: center;
-  padding: 1rem; /* Padding inside each item */
+  padding: 1rem;
 }
 
+/* Guarantee Item Image (Icon) Styles */
+/* Styles for the icon images used within each guarantee item. */
 .guarantee-item img {
-  width: 80px; /* Size of your icons */
+  width: 80px;
   height: 80px;
-  object-fit: contain; /* Ensures the image scales properly */
+  object-fit: contain;
   margin-bottom: 1rem;
-  /* Remove default img styles that apply border/shadow if they interfere */
   border: none;
   box-shadow: none;
 }
 
+/* Guarantee Item Heading Styles */
+/* Styles for the headings of individual guarantee items. */
 .guarantee-item h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #5C4033; /* Use a color from your brand palette for headings */
+  color: #5C4033;
   margin-bottom: 0.8rem;
 }
 
+/* Guarantee Item Paragraph Styles */
+/* Styles for the descriptive text within individual guarantee items. */
 .guarantee-item p {
   font-size: 0.95rem;
   color: #666;
   line-height: 1.5;
 }
 
+/* Guarantee Button Wrapper Styles */
+/* Styles the container for the button below the guarantee grid to ensure proper spacing. */
 .guarantee-button-wrapper {
-    margin-top: 2rem; /* Space above the button */
-    /* text-align: center; already covered by .guarantee-section */
+  margin-top: 2rem;
 }
 
+/* Testimonial Section Styles */
+/* Styling for the entire testimonial section, including background and spacing. */
 .testimonial-section {
-  background-color: #f0f0f0; /* Light background to separate it */
+  background-color: #f0f0f0;
   padding: 3rem 1rem;
-  margin-top: 3rem; /* Space above this section */
-  text-align: center; /* Center the heading */
+  margin-top: 3rem;
+  text-align: center;
 }
 
+/* Testimonial Heading Styles */
+/* Styles for the main heading of the testimonial section. */
 .testimonial-heading {
   font-size: 2.2rem;
   font-weight: 700;
@@ -161,37 +193,46 @@ button {
   margin-bottom: 2.5rem;
 }
 
+/* Individual Testimonial Card Styles */
+/* Styling for each testimonial card, including background, borders, shadow, and maximum width. */
 .testimonial-card {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Stronger shadow for the card */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   padding: 2rem;
-  max-width: 700px; /* Limit width for readability */
-  margin: 0 auto 2rem auto; /* Center the card and add space below */
-  text-align: left; /* Text inside the card should be left-aligned */
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-align: left;
 }
 
+/* Reviewer Info Styles */
+/* Uses flexbox to align the reviewer's photo and details side-by-side. */
 .reviewer-info {
-  display: flex; /* Use flexbox to align photo and details */
-  align-items: center; /* Vertically align items in the middle */
-  margin-bottom: 1.5rem; /* Space between reviewer info and testimonial text */
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
+/* Reviewer Photo Styles */
+/* Styles for the profile picture of the person giving the testimonial. */
 .reviewer-photo {
-  width: 70px; /* Size of the profile picture */
+  width: 70px;
   height: 70px;
-  border-radius: 50%; /* Make it round */
-  object-fit: cover; /* Crop image nicely if it's not square */
+  border-radius: 50%;
+  object-fit: cover;
   margin-right: 1rem;
-  /* Remove default img styles if they interfere with roundness/shadow */
   border: none;
   box-shadow: none;
 }
 
+/* Reviewer Details Styles */
+/* Styles for the container holding the reviewer's name, title, and date. */
 .reviewer-details {
-  flex-grow: 1; /* Allow details to take available space */
+  flex-grow: 1;
 }
 
+/* Reviewer Name Styles */
+/* Styles for the name of the person giving the testimonial. */
 .reviewer-name {
   font-weight: 700;
   font-size: 1.1rem;
@@ -199,6 +240,8 @@ button {
   margin-bottom: 0.2rem;
 }
 
+/* Reviewer Title/Role Styles */
+/* Styles for the job title or role of the person giving the testimonial. */
 .reviewer-title {
   font-size: 0.9rem;
   color: #555;
@@ -206,673 +249,848 @@ button {
   line-height: 1.3;
 }
 
+/* Review Date Styles */
+/* Styles for the date or context of the testimonial. */
 .review-date {
   font-size: 0.85rem;
   color: #777;
 }
 
+/* Testimonial Text Styles */
+/* Styles for the main body of the testimonial text. */
 .testimonial-text {
   font-size: 1rem;
   line-height: 1.7;
   color: #444;
 }
 
-
+/* Page Header Styles (for internal pages) */
+/* Styles for headers on internal pages (e.g., About, Projects, Resume), distinct from the homepage hero header. */
 .page-header {
-  background-image: none; /* No background image for internal pages header */
-  background-color: #f9f9f9; /* Or white, or a light brand color */
-  color: #333; /* Darker text for a light background */
-  padding: 2rem 1rem; /* Adjust padding */
+  background-image: none;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 2rem 1rem;
   text-align: center;
   height: auto;
-  grid-area: header; /* Keep this if body is grid */
+  grid-area: header;
 }
 
-/* Adjustments for title/subtitle on internal page header */
+/* Title Styles within Page Headers */
+/* Adjustments for the title's appearance specifically within internal page headers. */
 .page-header .title {
-  font-size: 2.5rem; /* Slightly smaller than homepage hero title */
+  font-size: 2.5rem;
   color: #333;
-  text-shadow: none; /* No shadow needed on light background */
+  text-shadow: none;
   margin-bottom: 0.5rem;
 }
 
+/* Subtitle Styles within Page Headers */
+/* Adjustments for the subtitle's appearance specifically within internal page headers. */
 .page-header .subtitle {
   font-size: 1.2rem;
   color: #555;
   margin-top: 0;
-  margin-bottom: 1rem; /* Space below subtitle */
+  margin-bottom: 1rem;
 }
 
+/* CTA Button Styles within Page Headers */
+/* Adjustments for the call-to-action button's spacing within internal page headers. */
 .page-header .cta-button {
-  margin-top: 1rem; /* Adjust margin if button is kept */
+  margin-top: 1rem;
 }
-
 
 /* About Section Enhancements */
+/* Styles for the primary "About" section, serving as an introduction with a light background and shadow. */
 .about-hero {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-color: #fff; /* White background for the initial section */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.about-intro-grid { /* Formerly .about-intro */
+/* About Intro Grid Styles */
+/* Defines a responsive grid layout for the profile photo and introductory text on the About page. */
+.about-intro-grid {
   display: grid;
   grid-template-columns: 1fr; /* Default to single column for mobile */
   gap: 2rem;
-  align-items: flex-start; /* Align items to the top (profile photo and text) */
+  align-items: flex-start;
 }
 
+/* Profile Photo Styles (general, used on About page) */
+/* Styles for profile photos, ensuring responsiveness, rounded corners, and shadows. */
 .profile-photo {
   width: 100%;
-  max-width: 300px; /* Increased max-width for prominence */
+  max-width: 300px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
-  margin: 0 auto; /* Center photo on mobile if it's a single column */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
 }
 
+/* About Intro Text Styles */
+/* Styles for the main descriptive text block in the About section's introduction. */
 .about-intro-text {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #444;
-  text-align: left; /* Ensure text is left-aligned within its column */
+  text-align: left;
 }
 
-.about-intro-text h2 { /* Targeting the 'My Data Journey' heading */
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-    text-align: left;
+/* Heading within About Intro Text */
+/* Styles for headings within the About section's introductory text (e.g., "My Data Journey"). */
+.about-intro-text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-.about-intro-text p:not(:last-child) { /* Space between paragraphs */
-    margin-bottom: 1rem;
+/* Paragraph Spacing within About Intro Text */
+/* Adds vertical spacing between paragraphs in the About section's introductory text. */
+.about-intro-text p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
-
+/* About Details Section Styles */
+/* Styles for the section containing detailed blocks like Vision, Mission, and Core Values. */
 .about-details {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    /* Optional: Add a light background or border to this section */
-    /* background-color: #f9f9f9; */
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
 }
 
+/* Heading within Detail Blocks */
+/* Styles for headings within specific detail blocks (e.g., "My Vision", "My Mission"). */
 .detail-block h2 {
-    font-size: 1.8rem; /* Slightly smaller headings for these sections */
-    color: #333;
-    margin-bottom: 1rem;
-    text-align: left;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
+/* Paragraphs within Detail Blocks */
+/* Styles for descriptive paragraphs within the detail blocks. */
 .detail-block p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
 }
 
-.core-values-list { /* New class for the ul */
-    list-style: none; /* Remove default bullets */
-    padding: 0;
-    margin: 0;
+/* Core Values List Styles */
+/* Styles for the unordered list of core values, removing default bullets and padding. */
+.core-values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Individual Core Value List Item Styles */
+/* Styles for each item in the core values list, including custom bullet points. */
 .core-values-list li {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem; /* Space for custom bullet */
-    position: relative;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
 }
 
-.core-values-list li::before { /* Custom bullet point */
-    content: '•'; /* Unicode character for a large dot */
-    color: #5C4033; /* Your brand color for the bullet */
-    font-weight: bold;
-    font-size: 1.2em; /* Make the bullet larger */
-    position: absolute;
-    left: 0;
-    top: 0;
+/* Custom Bullet Point for Core Values List Items */
+/* Uses a pseudo-element to create a custom bullet point for each core value. */
+.core-values-list li::before {
+  content: '•';
+  color: #5C4033;
+  font-weight: bold;
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-/* Call to Action Section */
+/* Call to Action Section (on About page) */
+/* Styles for a call-to-action block often found at the end of content sections. */
 .about-cta {
-    background-color: #d7b99d; /* Match your button color or a complementary shade */
-    color: #333; /* Darker text for contrast */
-    padding: 2.5rem 1rem;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 3rem; /* Space before footer */
+  background-color: #d7b99d;
+  color: #333;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 3rem;
 }
 
+/* Heading within About CTA */
+/* Styles for the main heading within the About page's call-to-action. */
 .about-cta h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #5C4033; /* Use brand color for CTA heading */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #5C4033;
 }
 
+/* Paragraph within About CTA */
+/* Styles for the descriptive text within the About page's call-to-action. */
 .about-cta p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: black;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: black;
 }
 
+/* CTA Button Styles within About CTA */
+/* Overrides default CTA button styles for the button in the About page's call-to-action. */
 .about-cta .cta-button {
-    background-color: #5C4033; /* Stronger button color */
-    color: white;
-    padding: 0.8rem 2.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
+  background-color: #5C4033;
+  color: white;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
+/* Hover effect for CTA Button within About CTA */
+/* Defines the hover state for the button in the About page's call-to-action. */
 .about-cta .cta-button:hover {
-    background-color: #7a5f4c;
+  background-color: #7a5f4c;
 }
 
 /* Project Page Specific Styles */
+/* Styles for an introductory section on project pages (e.g., Power BI, Tableau, Domo). */
 .project-intro-section {
-    max-width: 800px; /* Constrain width for readability */
-    margin: 2rem auto 3rem auto; /* Center and add vertical space */
-    padding: 0 1rem;
-    text-align: center; /* Center the intro text */
+  max-width: 800px;
+  margin: 2rem auto 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
 }
 
+/* Paragraphs within Project Intro Section */
+/* Styles for descriptive paragraphs within the project introductory section. */
 .project-intro-section p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #444;
-    margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 1.5rem;
 }
 
-/* Style for individual project cards */
+/* Individual Project Card Styles */
+/* Styles for each individual project display card, using grid for content and image layout. */
 .project-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    padding: 2.5rem;
-    max-width: 900px; /* Max width for the entire card */
-    margin: 3rem auto; /* Center each card with vertical spacing */
-    display: grid; /* Use grid for content and visual */
-    grid-template-columns: 1fr; /* Stack on mobile */
-    gap: 2.5rem; /* Space between text and image */
-    align-items: center; /* Vertically align content */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column on mobile */
+  gap: 2.5rem;
+  align-items: center;
 }
 
+/* Project Title Styles */
+/* Styles for the title of each individual project. */
 .project-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1.2rem;
-    text-align: left; /* Ensure title is left-aligned within its column */
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  text-align: left;
 }
 
+/* Project Description Paragraph Styles */
+/* Styles for paragraphs describing the project details. */
 .project-description {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #444;
-    margin-bottom: 1rem;
-    text-align: left; /* Ensure description is left-aligned */
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
+/* Unordered Lists within Project Descriptions */
+/* Styles for bulleted lists found within project descriptions. */
 .project-description ul {
-    list-style: disc; /* Or none, and use custom styling */
-    margin-left: 1.5rem;
-    margin-top: 0.5rem;
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 
+/* List Items within Project Descriptions */
+/* Styles for individual list items within project descriptions. */
 .project-description ul li {
-    margin-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
+/* Project Visual Image Styles */
+/* Styles for the main image/screenshot displayed for each project. */
 .project-visual img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Consistent with other images */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* Override generic img styles if they conflict */
-    border: none;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
+/* Figure Caption Styles for Project Visuals */
+/* Styles for captions accompanying project images. */
 .project-visual figcaption {
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 0.8rem;
-    text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.8rem;
+  text-align: center;
 }
 
 /* Style for optional call to action button within project visual (if used) */
+/* Styles for buttons that allow viewing a live project or more details. */
 .project-view-button {
-    display: block; /* Make it a block button */
-    margin-top: 1.5rem;
-    padding: 0.8rem 2rem;
-    background-color: #5C4033; /* Use your brand color */
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #5C4033;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover effect for project view button */
+/* Defines the hover state for the project view button. */
 .project-view-button:hover {
-    background-color: #7a5f4c;
+  background-color: #7a5f4c;
 }
 
 /* Game Section Specific Styles */
+/* Styles for the entire game section on the game.html page. */
 .game-section {
-    padding: 3rem 1rem;
-    background-color: #f0f0f0; /* Light background for the game area */
-    margin-top: 3rem;
-    text-align: center; /* Center the container */
+  padding: 3rem 1rem;
+  background-color: #f0f0f0;
+  margin-top: 3rem;
+  text-align: center;
 }
 
+/* Game Container Styles */
+/* Styles for the main container holding the game interface. */
 .game-container {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
 }
 
+/* Game Instructions Heading */
+/* Styles for the heading of the game's instruction section. */
 .game-instructions h2 {
-    font-size: 2rem;
-    color: #5C4033;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #5C4033;
+  margin-bottom: 1rem;
 }
 
+/* Game Instructions Paragraphs */
+/* Styles for the descriptive text in the game's instruction section. */
 .game-instructions p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #444;
-    margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
 }
 
+/* Game Area Styles */
+/* Styles for the dynamic area where the game elements are displayed. */
 .game-area {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
+/* Game Info Bar Styles */
+/* Styles for the bar displaying game information like score, time, and clues. */
 .game-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #eee;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
 }
 
+/* Span elements within Game Info (numbers/clue highlight) */
+/* Highlights specific dynamic text within the game info bar. */
 .game-info span {
-    color: #5C4033; /* Highlight numbers/clue */
+  color: #5C4033;
 }
 
+/* Data Grid Styles */
+/* Defines the grid layout for the interactive data squares in the game. */
 .data-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Responsive grid */
-    gap: 8px;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 8px;
+  margin-bottom: 2rem;
 }
 
+/* Individual Data Square Styles */
+/* Styles for each interactive square in the game's data grid. */
 .data-square {
-    width: 60px; /* Base size */
-    height: 60px; /* Base size */
-    background-color: #ccc;
-    border: 2px solid #bbb;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
-    user-select: none; /* Prevent text selection */
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+  user-select: none;
 }
 
+/* Hover effect for data squares */
+/* Defines the visual change when a user hovers over a data square. */
 .data-square:hover {
-    transform: scale(1.05);
-    border-color: #5C4033;
+  transform: scale(1.05);
+  border-color: #5C4033;
 }
 
-/* Colors for data points */
-.color-red { background-color: #ffcccc; border-color: #ff6666; }
-.color-blue { background-color: #ccedff; border-color: #66b3ff; }
-.color-green { background-color: #ccffcc; border-color: #66cc66; }
-.color-yellow { background-color: #ffffcc; border-color: #ffcc66; }
-.color-purple { background-color: #e5ccff; border-color: #b366ff; }
+/* Colors for data points (example classes) */
+/* Specific background and border colors for different categories of data squares. */
+.color-red {
+  background-color: #ffcccc;
+  border-color: #ff6666;
+}
+.color-blue {
+  background-color: #ccedff;
+  border-color: #66b3ff;
+}
+.color-green {
+  background-color: #ccffcc;
+  border-color: #66cc66;
+}
+.color-yellow {
+  background-color: #ffffcc;
+  border-color: #ffcc66;
+}
+.color-purple {
+  background-color: #e5ccff;
+  border-color: #b366ff;
+}
 
-/* Feedback styles */
+/* Feedback Styles for Data Squares */
+/* Styles to indicate whether a clicked data square was correct or incorrect. */
 .data-square.correct {
-    background-color: #d4edda; /* Light green */
-    border-color: #28a745; /* Dark green */
-    color: #28a745;
-    pointer-events: none; /* Disable clicking after correct guess */
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #28a745;
+  pointer-events: none;
 }
 
 .data-square.incorrect {
-    background-color: #f8d7da; /* Light red */
-    border-color: #dc3545; /* Dark red */
-    color: #dc3545;
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #dc3545;
 }
 
+/* Feedback Message Display Area */
+/* Styles for the text messages providing real-time feedback to the user during the game. */
 .feedback-message {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    min-height: 1.5rem; /* Reserve space to prevent layout shifts */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  min-height: 1.5rem;
 }
 
+/* Positive Feedback Message Color */
+/* Sets the color for positive feedback messages (e.g., correct answer). */
 .feedback-message.positive {
-    color: #28a745;
+  color: #28a745;
 }
 
+/* Negative Feedback Message Color */
+/* Sets the color for negative feedback messages (e.g., incorrect answer). */
 .feedback-message.negative {
-    color: #dc3545;
+  color: #dc3545;
 }
 
-/* Game results section */
+/* Game Results Section Styles */
+/* Styles for the section displayed after the game concludes, showing results. */
 .game-results {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
+/* Game Results Heading */
+/* Styles for the main heading within the game results section. */
 .game-results h2 {
-    font-size: 2rem;
-    color: #5C4033;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #5C4033;
+  margin-bottom: 1rem;
 }
 
+/* Game Results Paragraphs */
+/* Styles for descriptive text within the game results section. */
 .game-results p {
-    font-size: 1.2rem;
-    color: #444;
-    margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 1rem;
 }
 
-/* Utility classes */
+/* Utility Class: Hidden */
+/* A utility class to hide elements from view. */
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
-/* Download button in header */
+/* Download Button in Header (on Resume page) */
+/* Styles specifically for the download resume button often found in the header of the resume page. */
 .download-button {
-    margin-top: 1.5rem;
-    background-color: #5C4033; /* Your brand color */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block; /* Keep it as a button-like element */
-    padding: 0.7rem 2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-.download-button:hover {
-    background-color: #7a5f4c; /* Darker hover */
+  margin-top: 1.5rem;
+  background-color: #5C4033;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover effect for download button */
+/* Defines the visual change when hovering over the download button. */
+.download-button:hover {
+  background-color: #7a5f4c;
+}
 
 /* Resume Section Styles */
+/* Styles for the main container of the resume content, ensuring it's centered and visually distinct. */
 .resume-section {
-    max-width: 800px; /* Constrain resume width for readability */
-    margin: 2rem auto 4rem auto; /* Center the section and add vertical spacing */
-    padding: 2.5rem;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Ensure text aligns left within the resume content */
+  max-width: 800px;
+  margin: 2rem auto 4rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-.resume-content h2 { /* Category headings like "Skills", "Work Experience" */
-    font-size: 2rem;
-    color: #5C4033; /* Your brand color */
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #eee; /* Subtle separator */
-    text-align: center; /* Center category headings */
+/* Category Headings in Resume (e.g., "Skills", "Work Experience") */
+/* Styles for the main headings that categorize different sections of the resume. */
+.resume-content h2 {
+  font-size: 2rem;
+  color: #5C4033;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  text-align: center;
 }
 
-/* Contact Info */
+/* Contact Info Styles on Resume page */
+/* Styles for the contact details block at the top of the resume. */
 .resume-contact-info {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 2.5rem;
-    text-align: center; /* Center contact details */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
+/* Links within Contact Info */
+/* Styles for hyperlinked text within the contact information block. */
 .resume-contact-info a {
-    color: #007acc; /* Link color */
-    text-decoration: none;
+  color: #007acc;
+  text-decoration: none;
 }
 
+/* Hover effect for links within Contact Info */
+/* Defines the visual change when hovering over links in the contact information. */
 .resume-contact-info a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* General category spacing */
+/* General Category Spacing for Resume Sections */
+/* Provides consistent vertical spacing between major categories in the resume. */
 .resume-category {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Skills Grid */
+/* Skills Grid for Resume */
+/* Defines a responsive grid layout for organizing skill groups in the resume. */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
+/* Individual Skill Group Styles */
+/* Styles for each distinct group of skills (e.g., Programming, Data Tools). */
 .skill-group {
-    background-color: #f9f9f9;
-    padding: 1rem 1.2rem;
-    border-left: 4px solid #d7b99d; /* Accent bar */
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    text-align: left;
+  background-color: #f9f9f9;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid #d7b99d;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
+/* Heading within Skill Group */
+/* Styles for the sub-headings within each skill group. */
 .skill-group h3 {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
+/* Paragraph within Skill Group */
+/* Styles for the list of skills within each skill group. */
 .skill-group p {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.4;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
 }
 
-
-/* Individual Resume Item (for Work, Volunteer, Education) */
+/* Individual Resume Item Styles (for Work, Volunteer, Education entries) */
+/* General styles for each distinct entry in experience or education sections. */
 .resume-item {
-    margin-bottom: 1.5rem; /* Space between different jobs/certifications */
-    padding-bottom: 1.5rem;
-    border-bottom: 1px dashed #eee; /* Lighter separator */
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #eee;
 }
 
-.resume-item:last-child { /* No border for the last item in a category */
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+/* Removes border for the last resume item in a category */
+/* Ensures the last item in a list (e.g., last job) doesn't have a bottom border. */
+.resume-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.resume-item h3 { /* Job Title / Certification Name / Degree */
-    font-size: 1.25rem;
-    color: #333;
-    margin-bottom: 0.4rem;
+/* Job Title / Certification Name / Degree Heading */
+/* Styles for the main heading of each resume item, such as job title or degree name. */
+.resume-item h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.4rem;
 }
 
-.job-org, .meta, .education-school, .education-gpa { /* Organization / Cert Meta / School / GPA */
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 0.8rem;
-    line-height: 1.3;
+/* Organization / Certification Metadata / School / GPA Styles */
+/* Styles for secondary details within a resume item, like company name, certification provider, or GPA. */
+.job-org,
+.meta,
+.education-school,
+.education-gpa {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
 }
 
-/* For job titles and dates on the same line */
-.job-header, .education-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline; /* Align text baselines */
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-    margin-bottom: 0.4rem;
+/* For Job/Education Headers (title and date on the same line) */
+/* Uses flexbox to arrange job titles/degrees and their dates side-by-side. */
+.job-header,
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
 }
 
-.job-header h3, .education-header h3 {
-    margin-bottom: 0; /* Remove default margin from h3 */
-    margin-right: 1rem; /* Space between title and date */
-    line-height: 1.2; /* Adjust line height for better alignment */
+/* Heading within Job/Education Header */
+/* Adjusts margins for headings when paired with a date/timeframe. */
+.job-header h3,
+.education-header h3 {
+  margin-bottom: 0;
+  margin-right: 1rem;
+  line-height: 1.2;
 }
 
-.job-date, .education-date {
-    font-size: 0.95rem;
-    color: #666;
-    white-space: nowrap; /* Prevent date from breaking */
+/* Date/Timeframe within Job/Education Header */
+/* Styles for the date or timeframe associated with a job or educational entry. */
+.job-date,
+.education-date {
+  font-size: 0.95rem;
+  color: #666;
+  white-space: nowrap;
 }
 
-/* Description Lists for Experience */
-.job-description-list, .accomplishments-list {
-    list-style: disc; /* Standard bullet points */
-    margin-left: 1.5rem; /* Indent bullets */
-    padding: 0;
+/* Description Lists for Experience and Accomplishments */
+/* Styles for bulleted lists that detail responsibilities or achievements. */
+.job-description-list,
+.accomplishments-list {
+  list-style: disc;
+  margin-left: 1.5rem;
+  padding: 0;
 }
 
-.job-description-list li, .accomplishments-list li {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444;
-    margin-bottom: 0.5rem;
+/* List Items within Description Lists */
+/* Styles for individual bullet points detailing job responsibilities or accomplishments. */
+.job-description-list li,
+.accomplishments-list li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 0.5rem;
 }
 
-.job-description-list li:last-child, .accomplishments-list li:last-child {
-    margin-bottom: 0;
+/* Removes margin for the last list item */
+/* Ensures the final bullet point in a list doesn't have extra bottom margin. */
+.job-description-list li:last-child,
+.accomplishments-list li:last-child {
+  margin-bottom: 0;
 }
 
 /* Feedback Section Specific Styles */
+/* Styles for the entire feedback form section. */
 .feedback-section {
-    padding: 3rem 1rem;
-    margin-top: 3rem;
-    text-align: center; /* Center the container */
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  text-align: center;
 }
 
+/* Feedback Form Container */
+/* Styles for the container holding the feedback form itself. */
 .feedback-container {
-    max-width: 700px; /* Max width for the form container */
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem;
-    text-align: left; /* Align form elements to the left within the container */
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  text-align: left;
 }
 
+/* Feedback Intro Paragraph */
+/* Styles for the introductory text that sets the context for the feedback form. */
 .feedback-intro {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 2rem;
-    text-align: center; /* Keep intro text centered */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
+/* Form Group (each input field and its label) */
+/* Styles for individual groupings of labels and their corresponding input fields in the form. */
 .feedback-form .form-group {
-    margin-bottom: 1.5rem; /* Space between form fields */
+  margin-bottom: 1.5rem;
 }
 
+/* Labels for Form Fields */
+/* Styles for the text labels associated with form input fields. */
 .feedback-form label {
-    display: block; /* Make labels appear on their own line above inputs */
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
+/* Styles for Text, Email, and Textarea Inputs */
+/* Common styles applied to text, email, and textarea input fields for consistent appearance. */
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: 'Segoe UI', Roboto, sans-serif; /* Consistent font */
-    box-sizing: border-box; /* Include padding in width */
-    transition: border-color 0.3s ease;
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
+/* Focus state for inputs */
+/* Defines the visual feedback when a user focuses on an input field. */
 .feedback-form input[type="text"]:focus,
 .feedback-form input[type="email"]:focus,
 .feedback-form textarea:focus {
-    border-color: #5C4033; /* Highlight on focus */
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 5px rgba(92, 64, 51, 0.2); /* Subtle shadow on focus */
+  border-color: #5C4033;
+  outline: none;
+  box-shadow: 0 0 5px rgba(92, 64, 51, 0.2);
 }
 
+/* Textarea specific styles */
+/* Additional styles for the textarea element, including resizing behavior. */
 .feedback-form textarea {
-    resize: vertical; /* Allow vertical resizing */
-    min-height: 100px; /* Minimum height for textarea */
+  resize: vertical;
+  min-height: 100px;
 }
 
 /* Rating Stars */
+/* Styles for the interactive star rating component. */
 .rating-stars {
-    font-size: 2rem; /* Size of star symbols */
-    color: #ccc; /* Default grey for unselected stars */
-    cursor: pointer;
-    display: flex; /* Arrange stars in a row */
-    gap: 5px; /* Space between stars */
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
 }
 
+/* Individual Rating Star Styles */
+/* Styles for each star character within the rating component. */
 .rating-stars span {
-    transition: color 0.2s ease, transform 0.1s ease;
+  transition: color 0.2s ease, transform 0.1s ease;
 }
 
+/* Hover effect for rating stars */
+/* Defines the visual change when a user hovers over a star. */
 .rating-stars span:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+/* Selected Rating Star Styles */
+/* Sets the color for stars that have been selected by the user. */
 .rating-stars span.selected {
-    color: #ffc107; /* Gold color for selected stars */
+  color: #ffc107;
 }
 
-/* Error messages */
+/* Error Message Styles */
+/* Styles for displaying validation error messages to the user. */
 .error-message {
-    color: #dc3545; /* Red for errors */
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    min-height: 1.2rem; /* Reserve space to prevent layout shifts */
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  min-height: 1.2rem;
 }
 
-/* Success message */
+/* Success Message Styles */
+/* Styles for displaying a success message after a form submission. */
 .success-message {
-    color: #28a745; /* Green for success */
-    font-size: 1rem;
-    margin-top: 1rem;
-    font-weight: bold;
-    text-align: center;
+  color: #28a745;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Submit button */
+/* Form Submit Button Styles */
+/* Styles for the button used to submit the feedback form. */
 .form-submit-button {
-    width: auto; /* Allow button to size to content */
-    padding: 0.8rem 2.5rem;
-    font-size: 1.1rem;
-    margin-top: 1.5rem; /* Space above button */
-    background-color: #5C4033; /* Brand color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: auto;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  background-color: #5C4033;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover effect for form submit button */
+/* Defines the visual change when hovering over the form submit button. */
 .form-submit-button:hover {
-    background-color: #7a5f4c; /* Darker hover */
+  background-color: #7a5f4c;
 }
 
-
-/* Navigation */
+/* Navigation Styles */
+/* Styles for the main navigation bar. */
 nav {
   border-bottom: 1px solid #eee;
   padding: 1rem 0;
@@ -880,15 +1098,18 @@ nav {
   grid-area: nav;
 }
 
+/* Navigation List Styles */
+/* Styles for the unordered list containing navigation links. */
 .nav-list {
   display: flex;
   justify-content: center;
   list-style: none;
   gap: 2rem;
   flex-wrap: wrap;
-
 }
 
+/* Navigation Link Styles */
+/* Styles for the individual links within the navigation bar. */
 .nav-list a {
   text-decoration: none;
   font-weight: 500;
@@ -896,15 +1117,20 @@ nav {
   color: white;
 }
 
+/* Hover effect for navigation links */
+/* Defines the visual change when hovering over navigation links. */
 .nav-list a:hover {
   color: #007acc;
 }
 
-/* Dropdown */
+/* Dropdown Menu Container */
+/* Styles for a parent element that contains a dropdown menu. */
 .dropdown {
   position: relative;
 }
 
+/* Dropdown Menu Styles */
+/* Styles for the hidden dropdown menu that appears on hover. */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -916,22 +1142,28 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Displays dropdown menu on hover */
+/* Makes the dropdown menu visible when its parent is hovered. */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Dropdown Menu List Item Styles */
+/* Styles for individual list items within the dropdown menu. */
 .dropdown-menu li {
   margin: 0.5rem 0;
 }
 
-/* Main layout */
+/* Main Layout Styles */
+/* Defines the maximum width and centering for the main content area of the page. */
 main {
   max-width: 1024px;
   margin: auto;
   padding: 1rem;
 }
 
-/* Images */
+/* Generic Image Styles */
+/* Default styles applied to all images, which might be overridden by more specific classes. */
 img {
   border: 1px solid #5C4033;
   border-radius: 5px;
@@ -939,23 +1171,25 @@ img {
   width: 100%;
 }
 
-/* Gallery grid layout */
+/* Gallery Grid Layout Styles */
+/* Defines a responsive grid layout for image galleries. */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Default to single column for mobile */
   gap: 1rem;
   margin-top: 2rem;
-  
 }
 
-/* Tablet: 2 columns */
+/* Tablet: 2 columns (Media Query) */
+/* Adjusts the gallery layout to two columns on screens 600px wide and up. */
 @media screen and (min-width: 600px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop: 3 columns */
+/* Desktop: 3 columns (Media Query) */
+/* Adjusts the gallery and other content wrappers to multi-column layouts on screens 1024px wide and up. */
 @media screen and (min-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -963,7 +1197,6 @@ img {
 
   .intro-content-wrapper {
     grid-template-columns: 1fr 1fr;
-  
   }
 
   .guarantee-grid {
@@ -971,7 +1204,8 @@ img {
   }
 }
 
-/* About Section */
+/* About Section Intro Styles */
+/* Defines the layout for the introductory section of the About page, often with a photo and text. */
 .about-intro {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -980,6 +1214,8 @@ img {
   margin-bottom: 2rem;
 }
 
+/* Profile Photo Styles (specific to About page) */
+/* Styles for the main profile photo displayed on the About page. */
 .profile-photo {
   width: 100%;
   max-width: 250px;
@@ -987,12 +1223,15 @@ img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* About Text Container Styles */
+/* Styles for the main text block within the About section. */
 .about-text {
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
-/* Footer */
+/* Footer Styles */
+/* Styles for the page footer, including background, text alignment, and padding. */
 footer {
   background-color: #d7b99d;
   text-align: center;
@@ -1000,7 +1239,8 @@ footer {
   grid-area: footer;
 }
 
-/* Responsive typography & grid reset */
+/* Responsive Typography & Grid Reset (Media Query for screens up to 768px wide) */
+/* General adjustments for smaller screens, including font size and layout stacking. */
 @media (max-width: 768px) {
   body {
     font-size: 18px;
@@ -1011,99 +1251,157 @@ footer {
       "footer";
   }
 
+  /* About Intro: Stacks columns on mobile */
+  /* Adjusts the about introduction layout to a single column for mobile devices. */
   .about-intro {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
+  /* Centers profile photo on mobile */
+  /* Ensures the profile photo is centered when the layout stacks. */
   .profile-photo {
     margin: 0 auto;
   }
 
+  /* Nav List: Stacks navigation items vertically on mobile */
+  /* Arranges navigation links in a vertical column for mobile. */
   .nav-list {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Header: Stacks header content vertically on mobile */
+  /* Adjusts the header content to stack vertically on mobile. */
   header {
     flex-direction: column;
     align-items: center;
     height: auto;
   }
 
+  /* Intro Content Wrapper: Stacks content on mobile */
+  /* Adjusts the intro content wrapper to a single column layout on mobile. */
   .intro-content-wrapper {
     grid-template-columns: 1fr;
-    /* Stack on mobile */
     text-align: center;
-    /* Center content on mobile if desired */
   }
 
+  /* Padding for text/image within intro on mobile */
+  /* Adds horizontal padding for content within the intro section on mobile. */
   .intro-text,
   .intro-image {
     padding: 0 1rem;
-    /* Add some horizontal padding for mobile */
   }
 
+  /* Data Squares in Game: Smaller size on mobile */
+  /* Reduces the size of game data squares for better display on mobile. */
   .data-square {
-        width: 45px;
-        height: 45px;
-        font-size: 1.2rem;
-    }
-    .game-container {
-        padding: 1.5rem;
-    }
-    .game-info {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
 
-    .resume-section {
-        padding: 1.5rem;
-    }
+  /* Game Container: Smaller padding on mobile */
+  /* Reduces the padding of the game container on mobile devices. */
+  .game-container {
+    padding: 1.5rem;
+  }
 
-    .resume-content h2 {
-        font-size: 1.8rem;
-    }
+  /* Game Info: Stacks info items on mobile */
+  /* Arranges game information items (score, time, etc.) in a vertical column on mobile. */
+  .game-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    .job-header, .education-header {
-        flex-direction: column; /* Stack title and date on small screens */
-        align-items: flex-start;
-        gap: 0.2rem;
-    }
-    .job-header h3, .education-header h3 {
-        margin-right: 0;
-    }
-    .job-org, .meta, .education-school, .education-gpa {
-        margin-bottom: 0.5rem;
-    }
-    .job-date, .education-date {
-        margin-top: 0.2rem;
-    }
-    .skills-grid {
-        grid-template-columns: 1fr; /* Stack skills groups on mobile */
-    }
-    .skill-group {
-        text-align: left; /* Keep text left aligned within skill groups */
-    }
+  /* Resume Section: Smaller padding on mobile */
+  /* Reduces the padding of the resume section on mobile. */
+  .resume-section {
+    padding: 1.5rem;
+  }
 
-    .feedback-container {
-        padding: 1.5rem;
-    }
-    .feedback-form label {
-        font-size: 0.95rem;
-    }
-    .feedback-form input[type="text"],
-    .feedback-form input[type="email"],
-    .feedback-form textarea {
-        padding: 0.7rem;
-        font-size: 0.95rem;
-    }
-    .rating-stars {
-        font-size: 1.8rem;
-        justify-content: center; /* Center stars on small screens */
-    }
-    .form-submit-button {
-        width: 100%; /* Full width button on small screens */
-        padding: 0.9rem 1.5rem;
-    }
+  /* Resume Category Heading: Smaller font size on mobile */
+  /* Adjusts the font size of resume category headings for mobile readability. */
+  .resume-content h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Job/Education Header: Stacks title and date on mobile */
+  /* Arranges job titles/degrees and dates in a vertical stack on mobile. */
+  .job-header,
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  /* Removes right margin from heading when stacked */
+  /* Adjusts margin for headings when they stack vertically. */
+  .job-header h3,
+  .education-header h3 {
+    margin-right: 0;
+  }
+
+  /* Adjusts margin for organization/meta info on mobile */
+  /* Adjusts vertical spacing for organization and metadata on mobile. */
+  .job-org,
+  .meta,
+  .education-school,
+  .education-gpa {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Adjusts margin for date on mobile */
+  /* Adjusts vertical spacing for dates on mobile. */
+  .job-date,
+  .education-date {
+    margin-top: 0.2rem;
+  }
+
+  /* Skills Grid: Stacks skill groups on mobile */
+  /* Adjusts the skills grid to a single column layout on mobile. */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ensures skill group text remains left-aligned on mobile */
+  /* Maintains text alignment within skill groups when they stack. */
+  .skill-group {
+    text-align: left;
+  }
+
+  /* Feedback Container: Smaller padding on mobile */
+  /* Reduces the padding of the feedback form container on mobile. */
+  .feedback-container {
+    padding: 1.5rem;
+  }
+
+  /* Feedback Form Label: Smaller font size on mobile */
+  /* Adjusts the font size of form labels for mobile readability. */
+  .feedback-form label {
+    font-size: 0.95rem;
+  }
+
+  /* Feedback Form Inputs/Textarea: Smaller padding and font size on mobile */
+  /* Reduces padding and font size for form input fields on mobile. */
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  /* Rating Stars: Smaller font size and centered on mobile */
+  /* Adjusts star size and centers them for mobile display. */
+  .rating-stars {
+    font-size: 1.8rem;
+    justify-content: center;
+  }
+
+  /* Form Submit Button: Full width on mobile */
+  /* Makes the form submit button span the full width on mobile devices. */
+  .form-submit-button {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+  }
 }
