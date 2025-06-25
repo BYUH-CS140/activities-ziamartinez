@@ -7,29 +7,28 @@
 
 body {
   font-family: 'Segoe UI', Roboto, sans-serif;
-  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
   padding: 1rem;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-}
-
-/* Header */
-
-header {
   background-image: url('../images/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
   text-align: center;
   padding: 1rem;
   color: white;
-  grid-area: header;
   height: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 1rem;
+  border-radius: 8px;
 }
 
 button {
@@ -77,6 +76,9 @@ button {
   gap: 2rem; /* Space between text and image */
   align-items: center; /* Vertically align items in the middle */
   margin-bottom: 3rem; /* Space below this section */
+  background-color: #ffffff;
+  padding: 2rem 1rem; /* Padding inside the section */
+  border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 .intro-image img {
@@ -296,11 +298,6 @@ button {
     /* background-color: #f9f9f9; */
 }
 
-.detail-block {
-    margin-bottom: 2.5rem; /* Space between each block (Vision, Mission, Values) */
-    text-align: left; /* Ensure text within these blocks is left-aligned */
-}
-
 .detail-block h2 {
     font-size: 1.8rem; /* Slightly smaller headings for these sections */
     color: #333;
@@ -358,7 +355,7 @@ button {
 .about-cta p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #444;
+    color: black;
 }
 
 .about-cta .cta-button {
@@ -965,8 +962,8 @@ img {
   }
 
   .intro-content-wrapper {
-    grid-template-columns: 1fr 1fr; /* Two equal columns for desktop/tablet */
-    /* You could also use: grid-template-columns: 2fr 1fr; for text wider than image */
+    grid-template-columns: 1fr 1fr;
+  
   }
 
   .guarantee-grid {
@@ -999,7 +996,7 @@ img {
 footer {
   background-color: #d7b99d;
   text-align: center;
-  padding: 1px;
+  padding: 1rem;
   grid-area: footer;
 }
 
