@@ -4,60 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philippines</title>
+    <title>Zia Martinez | Power BI Projects</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header id="page-header">
-        <h1> Zia Martinez's Portfolio</h1>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a>Data Science/Analytics Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="power.html">Power BI</a></li>
+                        <li><a href="tableau.html">Tableau</a></li>
+                        <li><a href="domo.html">DOMO</a></li>
+                    </ul>
+                </li>
+                <li><a href="game.html">Game Development</a></li>
+                <li class="dropdown">
+                    <a>Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="title">Power BI Projects</h1>
+        <h3 class="subtitle">Transforming Raw Data into Actionable Business Intelligence</h3>
+        <button class="cta-button" onclick="location.href='https://calendly.com/giannazia3/30min'">Work With Me</button>
     </header>
 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown">
-                <a href="data.html">Data Science/Analytics Projects</a>
-                <ul class="dropdown-menu">
-                    <li><a href="power.html">Power BI</a></li>
-                    <li><a href="tableau.html">Tableau</a></li>
-                    <li><a href="domo.html">DOMO</a></li>
+    <main>
+        <section class="project-intro-section">
+            <p>
+                Power BI, Microsoft’s premier business intelligence and visualization tool, stands at the forefront of
+                the data revolution. This cloud-based suite of apps, software, and connectors not only aggregates and
+                contextualizes raw business data but also converts it into interactive visual dashboards. Below are
+                examples of how I leverage Power BI to extract insights, monitor performance, and empower data-driven
+                decision-making.
+            </p>
+        </section>
+
+        <section class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">Blissed Women Clothing App: Retail Performance Dashboard</h3>
+                <p class="project-description">
+                    <strong>Challenge:</strong> A women's clothing app needed a comprehensive view of its retail sales
+                    performance to identify top-performing outlets, popular item types, and overall sales trends across
+                    various locations.
+                </p>
+                <p class="project-description">
+                    <strong>My Role & Solution:</strong> I designed and developed an interactive Power BI dashboard to
+                    provide real-time insights. This involved:
+                <ul>
+                    <li>Connecting to diverse sales data sources.</li>
+                    <li>Utilizing DAX (Data Analysis Expressions) for key performance indicators (KPIs) like total sales
+                        and average ratings.</li>
+                    <li>Crafting dynamic visualizations to display outlet performance, item type breakdown, and
+                        geographical distribution.</li>
+                    <li>Implementing slicers and filters for granular analysis by location, product category, and time.
+                    </li>
                 </ul>
-            </li>
-            <li><a href="game.html">Game Development</a></li>
-            <li class="dropdown">
-                <a href="contact.html">Contact</a>
-                <ul class="dropdown-menu">
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="feedback.html">Feedback Form</a></li>
+                </p>
+                <p class="project-description">
+                    <strong>Impact:</strong> This dashboard empowered stakeholders to quickly identify underperforming
+                    outlets, capitalize on high-demand product categories, and make data-backed decisions to optimize
+                    inventory and marketing strategies.
+                </p>
+            </div>
+            <div class="project-visual">
+                <figure>
+                    <img src="images/power1.png" alt="Blissed Women Clothing App Dashboard in Power BI" />
+                    <figcaption>Figure 1: Comprehensive retail sales dashboard for a women’s clothing app.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="project-card reverse-layout">
+            <div class="project-content">
+                <h3 class="project-title">AdventureWorks: Sales & Operations Performance Overview</h3>
+                <p class="project-description">
+                    <strong>Challenge:</strong> AdventureWorks sought a holistic view of their sales and operational
+                    efficiency to monitor revenue growth, track top-selling products, and understand return rates across
+                    different product categories and time periods.
+                </p>
+                <p class="project-description">
+                    <strong>My Role & Solution:</strong> I developed a robust Power BI dashboard focused on key sales
+                    and operational metrics. This project included:
+                <ul>
+                    <li>Data modeling from complex relational databases to create a unified view.</li>
+                    <li>Implementing advanced calculations in DAX for trend analysis and comparative insights.</li>
+                    <li>Designing intuitive charts for revenue growth, product performance comparisons, and return rate
+                        analysis.</li>
+                    <li>Ensuring data cleanliness and integrity for reliable reporting.</li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
+                </p>
+                <p class="project-description">
+                    <strong>Impact:</strong> The dashboard provided leadership with a clear, real-time snapshot of
+                    business health, enabling them to quickly pinpoint areas for improvement, optimize product
+                    offerings, and enhance overall operational strategy.
+                </p>
+            </div>
+            <div class="project-visual">
+                <figure>
+                    <img src="images/power2.png" alt="AdventureWorks Sales Analytics Dashboard in Power BI" />
+                    <figcaption>Figure 2: Sales and operations performance overview for AdventureWorks.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <section>
-        <h3>Power BI Projects</h3>
-        <p>
-            Power BI, Microsoft’s premier business intelligence and visualization tool, stands at the forefront of this
-            revolution. This cloud-based suite of apps, software, and connectors not only aggregates and contextualizes
-            raw business data but also converts it into interactive visual dashboards (DataCamo, 2024).
-        </p>
+        <section class="project-cta-section">
+            <h2>Ready to Transform Your Data?</h2>
+            <p>Explore how custom Power BI dashboards can empower your business with actionable intelligence.</p>
+            <button class="cta-button" onclick="location.href='contact.html'">Let's Discuss Your Project</button>
+        </section>
 
-        <figure>
-            <img src="images/power1.png" alt="Blissed Women Clothing App Dashboard" width="300" />
-            <figcaption>Figure 1: Comprehensive retail sales dashboard for a women’s clothing app highlighting total
-                sales, average ratings, outlet performance, and item type breakdown across various locations.
-            </figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/power2.png" alt="AdventureWorks Sales Analytics Dashboard" width="300" />
-            <figcaption>Figure 2: Sales and operations performance overview for AdventureWorks, showing revenue growth
-                trends, top-selling products, return rates, and product category distribution over time.</figcaption>
-        </figure>
-    </section>
-
+    </main>
 
     <footer>
         <p>&copy; 2025 Zia Martinez. All rights reserved.</p>

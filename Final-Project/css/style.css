@@ -26,24 +26,857 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 1rem;
   color: white;
   grid-area: header;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #d7b99d;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 
-
 .title {
-  font-size: 3rem;    
-  font-weight: 700;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: #f0f0f0;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 4rem;
+  background-color: #d7b99d;
+  color: black;
+
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.intro-content-wrapper {
+  display: grid; /* Make it a grid container */
+  grid-template-columns: 1fr; /* Default to single column for mobile */
+  gap: 2rem; /* Space between text and image */
+  align-items: center; /* Vertically align items in the middle */
+  margin-bottom: 3rem; /* Space below this section */
+}
+
+.intro-image img {
+  width: 100%; /* Make image responsive within its grid column */
+  height: auto;
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.guarantee-section {
+  background-color: white;
+  padding: 3rem 1rem; /* Adjust padding as needed */
+  text-align: center; /* Center the main heading and the button wrapper */
+  margin-top: 2rem; /* Space above this section */
+  
+}
+
+.guarantee-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333; /* Darker color for emphasis */
+  margin-bottom: 2.5rem; /* Space below the heading */
+}
+
+.guarantee-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column on small screens */
+  gap: 2rem; /* Space between grid items */
+  max-width: 900px; /* Limit grid width to keep content readable */
+  margin: 0 auto 3rem auto; /* Center the grid and add space below */
+}
+
+.guarantee-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content within each item */
+  text-align: center;
+  padding: 1rem; /* Padding inside each item */
+}
+
+.guarantee-item img {
+  width: 80px; /* Size of your icons */
+  height: 80px;
+  object-fit: contain; /* Ensures the image scales properly */
+  margin-bottom: 1rem;
+  /* Remove default img styles that apply border/shadow if they interfere */
+  border: none;
+  box-shadow: none;
+}
+
+.guarantee-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #5C4033; /* Use a color from your brand palette for headings */
+  margin-bottom: 0.8rem;
+}
+
+.guarantee-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.guarantee-button-wrapper {
+    margin-top: 2rem; /* Space above the button */
+    /* text-align: center; already covered by .guarantee-section */
+}
+
+.testimonial-section {
+  background-color: #f0f0f0; /* Light background to separate it */
+  padding: 3rem 1rem;
+  margin-top: 3rem; /* Space above this section */
+  text-align: center; /* Center the heading */
+}
+
+.testimonial-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2.5rem;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Stronger shadow for the card */
+  padding: 2rem;
+  max-width: 700px; /* Limit width for readability */
+  margin: 0 auto 2rem auto; /* Center the card and add space below */
+  text-align: left; /* Text inside the card should be left-aligned */
+}
+
+.reviewer-info {
+  display: flex; /* Use flexbox to align photo and details */
+  align-items: center; /* Vertically align items in the middle */
+  margin-bottom: 1.5rem; /* Space between reviewer info and testimonial text */
+}
+
+.reviewer-photo {
+  width: 70px; /* Size of the profile picture */
+  height: 70px;
+  border-radius: 50%; /* Make it round */
+  object-fit: cover; /* Crop image nicely if it's not square */
+  margin-right: 1rem;
+  /* Remove default img styles if they interfere with roundness/shadow */
+  border: none;
+  box-shadow: none;
+}
+
+.reviewer-details {
+  flex-grow: 1; /* Allow details to take available space */
+}
+
+.reviewer-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+
+.reviewer-title {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.review-date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+
+.page-header {
+  background-image: none; /* No background image for internal pages header */
+  background-color: #f9f9f9; /* Or white, or a light brand color */
+  color: #333; /* Darker text for a light background */
+  padding: 2rem 1rem; /* Adjust padding */
+  text-align: center;
+  height: auto;
+  grid-area: header; /* Keep this if body is grid */
+}
+
+/* Adjustments for title/subtitle on internal page header */
+.page-header .title {
+  font-size: 2.5rem; /* Slightly smaller than homepage hero title */
+  color: #333;
+  text-shadow: none; /* No shadow needed on light background */
+  margin-bottom: 0.5rem;
+}
+
+.page-header .subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 1rem; /* Space below subtitle */
+}
+
+.page-header .cta-button {
+  margin-top: 1rem; /* Adjust margin if button is kept */
+}
+
+
+/* About Section Enhancements */
+.about-hero {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #fff; /* White background for the initial section */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-intro-grid { /* Formerly .about-intro */
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column for mobile */
+  gap: 2rem;
+  align-items: flex-start; /* Align items to the top (profile photo and text) */
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 300px; /* Increased max-width for prominence */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  margin: 0 auto; /* Center photo on mobile if it's a single column */
+}
+
+.about-intro-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: left; /* Ensure text is left-aligned within its column */
+}
+
+.about-intro-text h2 { /* Targeting the 'My Data Journey' heading */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about-intro-text p:not(:last-child) { /* Space between paragraphs */
+    margin-bottom: 1rem;
+}
+
+
+.about-details {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    /* Optional: Add a light background or border to this section */
+    /* background-color: #f9f9f9; */
+}
+
+.detail-block {
+    margin-bottom: 2.5rem; /* Space between each block (Vision, Mission, Values) */
+    text-align: left; /* Ensure text within these blocks is left-aligned */
+}
+
+.detail-block h2 {
+    font-size: 1.8rem; /* Slightly smaller headings for these sections */
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.detail-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.core-values-list { /* New class for the ul */
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.core-values-list li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem; /* Space for custom bullet */
+    position: relative;
+}
+
+.core-values-list li::before { /* Custom bullet point */
+    content: '•'; /* Unicode character for a large dot */
+    color: #5C4033; /* Your brand color for the bullet */
+    font-weight: bold;
+    font-size: 1.2em; /* Make the bullet larger */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Call to Action Section */
+.about-cta {
+    background-color: #d7b99d; /* Match your button color or a complementary shade */
+    color: #333; /* Darker text for contrast */
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 3rem; /* Space before footer */
+}
+
+.about-cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #5C4033; /* Use brand color for CTA heading */
+}
+
+.about-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+.about-cta .cta-button {
+    background-color: #5C4033; /* Stronger button color */
+    color: white;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.about-cta .cta-button:hover {
+    background-color: #7a5f4c;
+}
+
+/* Project Page Specific Styles */
+.project-intro-section {
+    max-width: 800px; /* Constrain width for readability */
+    margin: 2rem auto 3rem auto; /* Center and add vertical space */
+    padding: 0 1rem;
+    text-align: center; /* Center the intro text */
+}
+
+.project-intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+/* Style for individual project cards */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    max-width: 900px; /* Max width for the entire card */
+    margin: 3rem auto; /* Center each card with vertical spacing */
+    display: grid; /* Use grid for content and visual */
+    grid-template-columns: 1fr; /* Stack on mobile */
+    gap: 2.5rem; /* Space between text and image */
+    align-items: center; /* Vertically align content */
+}
+
+.project-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+    text-align: left; /* Ensure title is left-aligned within its column */
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 1rem;
+    text-align: left; /* Ensure description is left-aligned */
+}
+
+.project-description ul {
+    list-style: disc; /* Or none, and use custom styling */
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.project-description ul li {
+    margin-bottom: 0.4rem;
+}
+
+.project-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Consistent with other images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Override generic img styles if they conflict */
+    border: none;
+}
+
+.project-visual figcaption {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+/* Style for optional call to action button within project visual (if used) */
+.project-view-button {
+    display: block; /* Make it a block button */
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #5C4033; /* Use your brand color */
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-view-button:hover {
+    background-color: #7a5f4c;
+}
+
+/* Game Section Specific Styles */
+.game-section {
+    padding: 3rem 1rem;
+    background-color: #f0f0f0; /* Light background for the game area */
+    margin-top: 3rem;
+    text-align: center; /* Center the container */
+}
+
+.game-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+}
+
+.game-instructions h2 {
+    font-size: 2rem;
+    color: #5C4033;
+    margin-bottom: 1rem;
+}
+
+.game-instructions p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.game-area {
+    margin-top: 2rem;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.game-info span {
+    color: #5C4033; /* Highlight numbers/clue */
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Responsive grid */
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+
+.data-square {
+    width: 60px; /* Base size */
+    height: 60px; /* Base size */
+    background-color: #ccc;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+    user-select: none; /* Prevent text selection */
+}
+
+.data-square:hover {
+    transform: scale(1.05);
+    border-color: #5C4033;
+}
+
+/* Colors for data points */
+.color-red { background-color: #ffcccc; border-color: #ff6666; }
+.color-blue { background-color: #ccedff; border-color: #66b3ff; }
+.color-green { background-color: #ccffcc; border-color: #66cc66; }
+.color-yellow { background-color: #ffffcc; border-color: #ffcc66; }
+.color-purple { background-color: #e5ccff; border-color: #b366ff; }
+
+/* Feedback styles */
+.data-square.correct {
+    background-color: #d4edda; /* Light green */
+    border-color: #28a745; /* Dark green */
+    color: #28a745;
+    pointer-events: none; /* Disable clicking after correct guess */
+}
+
+.data-square.incorrect {
+    background-color: #f8d7da; /* Light red */
+    border-color: #dc3545; /* Dark red */
+    color: #dc3545;
+}
+
+.feedback-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    min-height: 1.5rem; /* Reserve space to prevent layout shifts */
+}
+
+.feedback-message.positive {
+    color: #28a745;
+}
+
+.feedback-message.negative {
+    color: #dc3545;
+}
+
+/* Game results section */
+.game-results {
+    margin-top: 2rem;
+}
+
+.game-results h2 {
+    font-size: 2rem;
+    color: #5C4033;
+    margin-bottom: 1rem;
+}
+
+.game-results p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* Utility classes */
+.hidden {
+    display: none !important;
+}
+
+/* Download button in header */
+.download-button {
+    margin-top: 1.5rem;
+    background-color: #5C4033; /* Your brand color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* Keep it as a button-like element */
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.download-button:hover {
+    background-color: #7a5f4c; /* Darker hover */
+}
+
+
+/* Resume Section Styles */
+.resume-section {
+    max-width: 800px; /* Constrain resume width for readability */
+    margin: 2rem auto 4rem auto; /* Center the section and add vertical spacing */
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Ensure text aligns left within the resume content */
+}
+
+.resume-content h2 { /* Category headings like "Skills", "Work Experience" */
+    font-size: 2rem;
+    color: #5C4033; /* Your brand color */
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee; /* Subtle separator */
+    text-align: center; /* Center category headings */
+}
+
+/* Contact Info */
+.resume-contact-info {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 2.5rem;
+    text-align: center; /* Center contact details */
+}
+
+.resume-contact-info a {
+    color: #007acc; /* Link color */
+    text-decoration: none;
+}
+
+.resume-contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* General category spacing */
+.resume-category {
+    margin-bottom: 2.5rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill-group {
+    background-color: #f9f9f9;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid #d7b99d; /* Accent bar */
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.skill-group h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.skill-group p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+/* Individual Resume Item (for Work, Volunteer, Education) */
+.resume-item {
+    margin-bottom: 1.5rem; /* Space between different jobs/certifications */
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #eee; /* Lighter separator */
+}
+
+.resume-item:last-child { /* No border for the last item in a category */
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.resume-item h3 { /* Job Title / Certification Name / Degree */
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.4rem;
+}
+
+.job-org, .meta, .education-school, .education-gpa { /* Organization / Cert Meta / School / GPA */
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+/* For job titles and dates on the same line */
+.job-header, .education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* Align text baselines */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    margin-bottom: 0.4rem;
+}
+
+.job-header h3, .education-header h3 {
+    margin-bottom: 0; /* Remove default margin from h3 */
+    margin-right: 1rem; /* Space between title and date */
+    line-height: 1.2; /* Adjust line height for better alignment */
+}
+
+.job-date, .education-date {
+    font-size: 0.95rem;
+    color: #666;
+    white-space: nowrap; /* Prevent date from breaking */
+}
+
+/* Description Lists for Experience */
+.job-description-list, .accomplishments-list {
+    list-style: disc; /* Standard bullet points */
+    margin-left: 1.5rem; /* Indent bullets */
+    padding: 0;
+}
+
+.job-description-list li, .accomplishments-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.job-description-list li:last-child, .accomplishments-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Feedback Section Specific Styles */
+.feedback-section {
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+    text-align: center; /* Center the container */
+}
+
+.feedback-container {
+    max-width: 700px; /* Max width for the form container */
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    text-align: left; /* Align form elements to the left within the container */
+}
+
+.feedback-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+    text-align: center; /* Keep intro text centered */
+}
+
+.feedback-form .form-group {
+    margin-bottom: 1.5rem; /* Space between form fields */
+}
+
+.feedback-form label {
+    display: block; /* Make labels appear on their own line above inputs */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Roboto, sans-serif; /* Consistent font */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+    border-color: #5C4033; /* Highlight on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(92, 64, 51, 0.2); /* Subtle shadow on focus */
+}
+
+.feedback-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Rating Stars */
+.rating-stars {
+    font-size: 2rem; /* Size of star symbols */
+    color: #ccc; /* Default grey for unselected stars */
+    cursor: pointer;
+    display: flex; /* Arrange stars in a row */
+    gap: 5px; /* Space between stars */
+}
+
+.rating-stars span {
+    transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.rating-stars span:hover {
+    transform: scale(1.1);
+}
+
+.rating-stars span.selected {
+    color: #ffc107; /* Gold color for selected stars */
+}
+
+/* Error messages */
+.error-message {
+    color: #dc3545; /* Red for errors */
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    min-height: 1.2rem; /* Reserve space to prevent layout shifts */
+}
+
+/* Success message */
+.success-message {
+    color: #28a745; /* Green for success */
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Submit button */
+.form-submit-button {
+    width: auto; /* Allow button to size to content */
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem; /* Space above button */
+    background-color: #5C4033; /* Brand color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-button:hover {
+    background-color: #7a5f4c; /* Darker hover */
 }
 
 
 /* Navigation */
 nav {
-  background-color: #d7b99d;
   border-bottom: 1px solid #eee;
   padding: 1rem 0;
   margin-bottom: 2rem;
@@ -56,13 +889,14 @@ nav {
   list-style: none;
   gap: 2rem;
   flex-wrap: wrap;
+
 }
 
 .nav-list a {
   text-decoration: none;
-  color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
+  color: white;
 }
 
 .nav-list a:hover {
@@ -77,7 +911,7 @@ nav {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: black;
   padding: 0.5rem;
   list-style: none;
   top: 100%;
@@ -114,6 +948,7 @@ img {
   grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 2rem;
+  
 }
 
 /* Tablet: 2 columns */
@@ -126,6 +961,15 @@ img {
 /* Desktop: 3 columns */
 @media screen and (min-width: 1024px) {
   .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .intro-content-wrapper {
+    grid-template-columns: 1fr 1fr; /* Two equal columns for desktop/tablet */
+    /* You could also use: grid-template-columns: 2fr 1fr; for text wider than image */
+  }
+
+  .guarantee-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -178,4 +1022,91 @@ footer {
   .profile-photo {
     margin: 0 auto;
   }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .intro-content-wrapper {
+    grid-template-columns: 1fr;
+    /* Stack on mobile */
+    text-align: center;
+    /* Center content on mobile if desired */
+  }
+
+  .intro-text,
+  .intro-image {
+    padding: 0 1rem;
+    /* Add some horizontal padding for mobile */
+  }
+
+  .data-square {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    .game-container {
+        padding: 1.5rem;
+    }
+    .game-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .resume-section {
+        padding: 1.5rem;
+    }
+
+    .resume-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .job-header, .education-header {
+        flex-direction: column; /* Stack title and date on small screens */
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+    .job-header h3, .education-header h3 {
+        margin-right: 0;
+    }
+    .job-org, .meta, .education-school, .education-gpa {
+        margin-bottom: 0.5rem;
+    }
+    .job-date, .education-date {
+        margin-top: 0.2rem;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills groups on mobile */
+    }
+    .skill-group {
+        text-align: left; /* Keep text left aligned within skill groups */
+    }
+
+    .feedback-container {
+        padding: 1.5rem;
+    }
+    .feedback-form label {
+        font-size: 0.95rem;
+    }
+    .feedback-form input[type="text"],
+    .feedback-form input[type="email"],
+    .feedback-form textarea {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    .rating-stars {
+        font-size: 1.8rem;
+        justify-content: center; /* Center stars on small screens */
+    }
+    .form-submit-button {
+        width: 100%; /* Full width button on small screens */
+        padding: 0.9rem 1.5rem;
+    }
 }

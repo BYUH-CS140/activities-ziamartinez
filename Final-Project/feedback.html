@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zia Martinez | Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a>Data Science/Analytics Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="power.html">Power BI</a></li>
+                        <li><a href="tableau.html">Tableau</a></li>
+                        <li><a href="domo.html">DOMO</a></li>
+                    </ul>
+                </li>
+                <li><a href="game.html">Game Development</a></li>
+                <li class="dropdown">
+                    <a>Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="title">Your Feedback Matters!</h1>
+        <h3 class="subtitle">Help me improve my portfolio and services.</h3>
+    </header>
+
+    <main>
+        <section class="feedback-section">
+            <div class="feedback-container">
+                <p class="feedback-intro">I'm always striving to enhance my work and deliver impactful data solutions. Please share your thoughts, suggestions, or any questions you might have about my portfolio or services. Your insights are invaluable!</p>
+
+                <form id="feedbackForm" action="https://formspree.io/f/mdkzpazo" method="POST" class="feedback-form">
+
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="name@example.com">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Regarding a project, general feedback, etc.">
+                        <div class="error-message" id="subjectError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback">Your Feedback:</label>
+                        <textarea id="feedback" name="feedback" rows="7" required placeholder="Tell me what you think..."></textarea>
+                        <div class="error-message" id="feedbackError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">How would you rate my portfolio? (1-5 stars):</label>
+                        <div class="rating-stars" id="ratingStars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <input type="hidden" id="rating" name="rating">
+                        <div class="error-message" id="ratingError"></div>
+                    </div>
+
+                    <button type="submit" class="cta-button form-submit-button">Send Feedback</button>
+
+                    <p id="formSuccessMessage" class="success-message hidden">Thank you for your feedback! Your message has been sent.</p>
+                    <p id="formErrorMessage" class="error-message hidden">There was an issue sending your feedback. Please try again later.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zia Martinez. All rights reserved.</p>
+    </footer>
+
+    <script src="js/feedback.js"></script> </body>
+
+</html>

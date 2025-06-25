@@ -1,77 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zia Martinez | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zia Martinez | About</title> <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header id="page-header">
-    <h1 class="title">Zia Martinez's Portfolio</h1>
-  </header>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a>Data Science/Analytics Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="power.html">Power BI</a></li>
+                        <li><a href="tableau.html">Tableau</a></li>
+                        <li><a href="domo.html">DOMO</a></li>
+                    </ul>
+                </li>
+                <li><a href="game.html">Game Development</a></li>
+                <li class="dropdown">
+                    <a>Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-  <nav>
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li class="dropdown">
-        <a href="data.html">Data Science/Analytics Projects</a>
-        <ul class="dropdown-menu">
-          <li><a href="power.html">Power BI</a></li>
-          <li><a href="tableau.html">Tableau</a></li>
-          <li><a href="domo.html">DOMO</a></li>
-        </ul>
-      </li>
-      <li><a href="game.html">Game Development</a></li>
-      <li class="dropdown">
-        <a href="contact.html">Contact</a>
-        <ul class="dropdown-menu">
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="feedback.html">Feedback Form</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+        <h1 class="title">Get To Know Me</h1>
+        <h3 class="subtitle">Bringing Your Data to Life, One Insight at a Time.</h3>
+        <button class="cta-button" onclick="location.href='https://calendly.com/giannazia3/30min'">Work With Me</button>
+    </header>
 
-  <main>
-  <section class="about-section">
-    <div class="about-intro">
-      <img src="images/me.jpg" alt="Zia Martinez" class="profile-photo">
-      <div class="about-text">
-        <h2>My Story</h2>
-        <p>
-          Growing up in the Philippines, I saw firsthand how small businesses and communities struggled to make sense of the numbers that surrounded them—sales reports, government statistics, market trends. My curiosity for technology started with helping my family run their small real estate business, using simple spreadsheets to track and make better decisions. What began as a necessity turned into a passion.
-        </p>
-        <p>
-          When I moved to Hawaii to pursue my degree at BYU–Hawaii, I carried with me a mission: to use data not just as numbers, but as a language for change. I’ve since discovered how powerful analytics can be—when used ethically and creatively—to solve real problems, tell compelling stories, and bridge understanding between people and systems.
-        </p>
-      </div>
-    </div>
+    <main>
+        <section class="about-hero">
+            <div class="about-intro-grid"> <img src="images/me.jpg" alt="Zia Martinez - Data Scientist" class="profile-photo">
+                <div class="about-intro-text"> <h2>My Data Journey: From Spreadsheets to Strategic Insights</h2>
+                    <p>
+                        My fascination with data began not in a classroom, but in the bustling markets of the Philippines, where I witnessed firsthand the challenges small businesses faced in navigating economic fluctuations and market trends. I saw the power hidden in everyday numbers – sales figures, inventory counts, local statistics – and how understanding them could truly transform operations. My early experience, supporting my family's real estate business with simple spreadsheets to track performance and inform decisions, ignited a lifelong passion for transforming raw data into actionable intelligence.
+                    </p>
+                    <p>
+                        Moving to Hawaii and pursuing my degree at BYU–Hawaii deepened this commitment. Here, I immersed myself in the technical foundations of data science, honing skills in <strong>SQL, Python, R, and advanced analytics tools like Domo, Power BI, and Tableau</strong>. My academic journey, enriched by projects in areas like <strong>predictive modeling and data visualization</strong>, allowed me to see data not merely as information, but as a universal language for understanding and driving change. I learned to extract meaningful narratives from complex datasets, ensuring insights are not only accurate but also ethically sound and impactful.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <h2>My Vision</h2>
-    <p>
-      To inspire and empower individuals and organizations through data-driven insights that spark meaningful impact and foster sustainable innovation.
-    </p>
+        <section class="about-details">
+            <div class="detail-block">
+                <h2>My Vision: Empowering Through Data</h2>
+                <p>
+                    I believe that data, when harnessed thoughtfully, has the power to inspire and empower. My vision is to help individuals and organizations leverage data-driven insights to spark meaningful impact and foster sustainable innovation, especially in contexts where data literacy might be evolving.
+                </p>
+            </div>
 
-    <h2>My Mission</h2>
-    <p>
-      To transform complex data into clear, actionable insights that support better decisions, amplify stories worth telling, and create opportunities for growth—especially for those often left behind in the digital revolution.
-    </p>
+            <div class="detail-block">
+                <h2>My Mission: Transforming Complexity into Clarity</h2>
+                <p>
+                    My mission is to transform complex data into clear, actionable insights that support smarter decisions, amplify stories worth telling, and create opportunities for growth. I am driven by the desire to make sophisticated analytics accessible and meaningful, bridging the gap between raw information and strategic action, particularly for those who may have historically been underserved by technological advancements.
+                </p>
+            </div>
 
-    <h2>My Core Values</h2>
-    <ul class="core-values">
-      <li><strong>Integrity:</strong> I value honesty and ethics in all aspects of my work and relationships.</li>
-      <li><strong>Curiosity:</strong> I’m always exploring new tools, trends, and ideas that challenge me to think deeper.</li>
-      <li><strong>Empathy:</strong> I prioritize human-centered design, ensuring my work is accessible and meaningful for real people.</li>
-      <li><strong>Collaboration:</strong> I believe great things happen when diverse minds work together toward a common goal.</li>
-      <li><strong>Excellence:</strong> I hold myself to high standards and continually strive to grow in both skill and character.</li>
-    </ul>
-  </section>
-</main>
+            <div class="detail-block">
+                <h2>My Core Values: The Pillars of My Practice</h2>
+                <ul class="core-values-list"> <li><strong>Integrity:</strong> Upholding honesty and ethical rigor in every dataset analyzed, every model built, and every recommendation made.</li>
+                    <li><strong>Curiosity:</strong> Continuously exploring new methodologies, algorithms, and industry trends to push the boundaries of what data can reveal.</li>
+                    <li><strong>Empathy:</strong> Designing human-centered data solutions that are intuitive, accessible, and truly resonate with the diverse needs of users.</li>
+                    <li><strong>Collaboration:</strong> Fostering strong partnerships and believing that the most impactful insights emerge from diverse perspectives working in concert.</li>
+                    <li><strong>Excellence:</strong> Committing to the highest standards of analytical precision, innovative problem-solving, and continuous professional growth.</li>
+                </ul>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Zia Martinez. All rights reserved.</p>
-  </footer>
+        <section class="about-cta">
+            <h3>Ready to Transform Your Data into Actionable Insights?</h3>
+            <p>Let's connect and explore how data science can drive your next big success.</p>
+            <button class="cta-button" onclick="location.href='contact.html'">Get in Touch</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zia Martinez. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

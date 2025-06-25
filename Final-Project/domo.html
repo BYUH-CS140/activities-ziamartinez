@@ -4,64 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philippines</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Zia Martinez | Domo Projects</title> <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header id="page-header">
-        <h1> Zia Martinez's Portfolio</h1>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a>Data Science/Analytics Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="power.html">Power BI</a></li>
+                        <li><a href="tableau.html">Tableau</a></li>
+                        <li><a href="domo.html">DOMO</a></li>
+                    </ul>
+                </li>
+                <li><a href="game.html">Game Development</a></li>
+                <li class="dropdown">
+                    <a>Contact</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="title">Domo Projects</h1>
+        <h3 class="subtitle">Real-time Business Management and Data Automation</h3>
+        <button class="cta-button" onclick="location.href='https://calendly.com/giannazia3/30min'">Work With Me</button>
     </header>
 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown">
-                <a href="data.html">Data Science/Analytics Projects</a>
-                <ul class="dropdown-menu">
-                    <li><a href="power.html">Power BI</a></li>
-                    <li><a href="tableau.html">Tableau</a></li>
-                    <li><a href="domo.html">DOMO</a></li>
-                </ul>
-            </li>
-            <li><a href="game.html">Game Development</a></li>
-            <li class="dropdown">
-                <a href="contact.html">Contact</a>
-                <ul class="dropdown-menu">
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="feedback.html">Feedback Form</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <main>
+        <section class="project-intro-section">
+            <p>
+                Domo’s business management platform is designed to turn disparate data into actionable insights, providing the context necessary for faster, better-informed decisions. While traditional reporting often leads to backlogs, Domo automates these processes by connecting to your data in real time, empowering dynamic business intelligence. Explore how I've leveraged Domo to create powerful, automated reporting solutions.
+            </p>
+            </section>
 
-    <section>
-        <h3>Domo Projects</h3>
-        <p>
-            Domo’s business management platform turns data into insights and gives you the context you need for faster,
-            better-informed decisions. Traditional reporting methods often result in backlog, but Domo automates those
-            processes by connecting to your data in real time (Domo, 2024).
-        </p>
+        <section class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">BYU–Hawaii: Graduation Rate Performance Analysis</h3>
+                <p class="project-description">
+                    <strong>Challenge:</strong> BYU–Hawaii needed a clear and consistent way to compare its graduation performance against regional and national peer institutions, track completion rates from 4-year to 8-year, and monitor longitudinal data trends alongside undergraduate headcount.
+                </p>
+                <p class="project-description">
+                    <strong>My Role & Solution:</strong> I developed an interactive Domo dashboard focused on institutional graduation performance. This involved:
+                    <ul>
+                        <li>Integrating various data sources including student records and institutional benchmarks.</li>
+                        <li>Building calculated metrics to track 4-year, 6-year, and 8-year graduation rates.</li>
+                        <li>Designing comparative visualizations to benchmark BYU–Hawaii against other institutions.</li>
+                        <li>Implementing trend lines and historical data views for long-term strategic planning.</li>
+                    </ul>
+                </p>
+                <p class="project-description">
+                    <strong>Impact:</strong> The dashboard provided university leadership and academic departments with critical insights into student success, enabling them to identify areas for improvement in student retention and program efficacy, ultimately supporting strategic initiatives to enhance graduation rates.
+                </p>
+            </div>
+            <div class="project-visual">
+                <figure>
+                    <img src="images/domo1.png" alt="BYU–Hawaii Graduation Rate Dashboard in Domo" />
+                    <figcaption>Figure 1: Visual comparison of BYU–Hawaii’s graduation performance against peer institutions.</figcaption>
+                </figure>
+                </div>
+        </section>
 
-        <figure>
-            <img src="images/domo1.png" alt="BYU–Hawaii Graduation Rate Dashboard" width="300" />
-            <figcaption>Figure 1: Visual comparison of BYU–Hawaii’s graduation performance against regional and national
-                peer institutions from 4-year to 8-year completion rates, including longitudinal data trends and
-                undergraduate headcount metrics.</figcaption>
-        </figure>
+        <section class="project-card reverse-layout"> <div class="project-content">
+                <h3 class="project-title">BYU–Hawaii: Student Academic Success Summary</h3>
+                <p class="project-description">
+                    <strong>Challenge:</strong> The university required a comprehensive snapshot of key academic success indicators, including student headcount, graduation and retention rates, financial aid distribution, and demographic trends (specifically by ethnicity) over a multi-year period (2017 to 2022).
+                </p>
+                <p class="project-description">
+                    <strong>My Role & Solution:</strong> I designed and implemented a dynamic Domo dashboard summarizing critical student academic success data. My process included:
+                    <ul>
+                        <li>Connecting to and transforming diverse student data sets for unified analysis.</li>
+                        <li>Creating detailed visualizations for demographic breakdowns, including ethnic groups.</li>
+                        <li>Developing interactive charts to track financial aid distribution and its correlation with retention.</li>
+                        <li>Ensuring data refreshes were automated for real-time insights into student progress.</li>
+                    </ul>
+                </p>
+                <p class="project-description">
+                    <strong>Impact:</strong> This dashboard provided academic advisors, institutional research, and administration with a powerful tool to monitor student demographics and performance, informing targeted support programs, resource allocation, and initiatives aimed at improving student outcomes and equity across different groups.
+                </p>
+            </div>
+            <div class="project-visual">
+                <figure>
+                    <img src="images/domo2.png" alt="BYU–Hawaii Student Academic Success Summary Dashboard in Domo" />
+                    <figcaption>Figure 2: Snapshot of key academic success indicators at BYU–Hawaii, including demographic trends by ethnicity.</figcaption>
+                </figure>
+                </div>
+        </section>
 
-        <figure>
-            <img src="images/domo2.png" alt="BYU–Hawaii Student Academic Success Summary" width="300" />
-            <figcaption>Figure 2: Snapshot of key academic success indicators at BYU–Hawaii, including student
-                headcount, graduation and retention rates, financial aid distribution, and demographic trends by
-                ethnicity from 2017 to 2022.</figcaption>
-        </figure>
-    </section>
+        <section class="project-cta-section">
+            <h2>See Your Data in a New Light?</h2>
+            <p>Let's collaborate to build real-time, actionable dashboards that drive your business forward.</p>
+            <button class="cta-button" onclick="location.href='contact.html'">Let's Discuss Your Project</button>
+        </section>
+
+    </main>
 
     <footer>
         <p>&copy; 2025 Zia Martinez. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
